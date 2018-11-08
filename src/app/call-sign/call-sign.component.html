@@ -1,0 +1,26 @@
+<label>
+	CallSign:
+	<input type="text" (keypress)="callSignChange($event)" [formControl]="callSign" />
+	<p>
+		Angular Class -> Model Value: {{callSign.value}}
+	</p>
+	<button (click)="setValue()" id="myButtonId">Button #1</button>
+	<button id="myButtonId2">Button #2</button>
+	<button id="myButtonId3">Button #3</button>
+	<button id="myButtonId4">Button #4</button>
+	<button id="myButtonId5">Button #5</button>
+	<hr>
+
+	CallSign2:
+	<input type="text" [formControl]="callSign2" />
+	<p>
+		Angular Class -> Model Value: {{callSign2.value}}
+	</p>
+
+	CallSign3:
+	<input type="text" [formControl]="callSign3" />
+	<p>
+		Angular Class -> Model Value: {{callSign3.value}}
+	</p>
+
+</label>
